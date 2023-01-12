@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Sessions | Hello Coderz</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="scripts.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/logoNoWords.png">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body onscroll="scrollFunction()" onresize="resizeFunction(2600)" onload="resizeFunction(2600)">
+		<nav>
+			<div class="left-side">
+				<a href="index" class="logo"><img src="images/whiteLogo.png" alt="logo"></a>
+			</div>
+			
+			<div class="right-side">
+				<!-- Right-sided navbar links -->
+				<div class="right hide-small">
+				
+					<div id = "myNav" class="nav-link-wrapper overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					
+						<div class="overlay-content">
+						
+							<hr>
+							
+							<div id = "dropdown1" class="dropdown">
+								<div tabindex=0 onclick="toggleDropdown()" class = "link">
+									<a>ABOUT</a>
+									<span class="carrot">&#8250;</span>
+								</div>
+								
+								<div class="dropdown-content">
+									<a class="dropdown-link" href="faq">FAQs</a>
+									<a class="dropdown-link" href="policies">Policies</a>
+									<a class="dropdown-link" href="founders">Founders</a>
+								</div>
+							</div>
+							
+							<hr>
+							
+							<a href="why" class="link">WHY</a>
+							
+							<hr>
+							
+							<a href="levels" class="link">PYTHON LEVELS</a>
+							
+							<hr>
+							
+							<a href="tuition" class="link">TUITION</a>
+							
+							<hr>
+							
+							<div id = "dropdown2" class="dropdown">
+								<div tabindex=0 onclick="toggleDropdown()" class = "link active-link">
+									<a>REGISTER</a>
+									<span class = "carrot">&#8250;</span>
+								</div>
+								
+								<div class="dropdown-content">
+									<a class="dropdown-link" href="trial">Free Trial</a>
+									<a class="dropdown-link" href="session">Sessions</a>
+								</div>
+							</div>
+							
+							<hr>
+							
+							<a href="contests" class="link">CONTESTS</a>
+							
+							<hr>
+							
+							<a href="jobs" class="link">JOBS</a>
+							
+							<hr>
+							
+							<a href="contact" class="link">CONTACT</a>
+							
+						</div>
+						
+					</div>
+					
+					<a href="javascript:void(0)" class="menu" onclick="openNav()">&#9776;</a>
+					
+				</div>
+			</div>
+		</nav>
+		
+		<main>
+			<div class="hero-image">
+				<div class="hero-text">
+					<h1>Register for the First Session</h1>
+				</div>
+			</div>
+		
+			<div class="main-wrapper">	
+				<p>
+				If you have not had a free trial class yet, please fill out that form under registration  
+				to book one! After the class, please come back here and fill out this form to register for a session. If you have already had a free trial class, please continue to fill out the form, and we will be in contact shortly.
+                <br>
+                <br>
+                <strong>A session consists of 10 one-hour classes. Once you register through this form, we will email you regarding open time slots for your child. Once a time is decided upon, payment can be made. Payment is required prior to the first class of the session.</strong>  
+				</p>
+				
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9L3a-cjnAMYcYnExMOzFJMCnp_ruJSafyEff0NmSdU9deMg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			</div>
+			
+			<footer>
+				<div class="left-footer-wrapper">
+					<h3>Connect With Us</h3>
+				
+					<a href="https://www.facebook.com/Hello-Coderz-100532678429174" target="_blank"><i class="fa fa-facebook-official"></i></a>
+					<a href="https://www.instagram.com/hellocoderz" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UC-Uk219y5WWWXd9Q2IXkONw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+					<a href="https://www.linkedin.com/company/hello-coderz" target="_blank"><i class="fa fa-linkedin"></i></a>
+				</div>
+				
+				<div class="right-footer-wrapper">
+					<div class="right-footer-item">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:info@hellocoderz.com">info@hellocoderz.com</a>
+					</div>
+										
+					<div class="right-footer-item">
+						<i class="fa fa-phone"></i>
+						<a href="tel:(603) 943-1367">(603) 943-1367</a>
+					</div>
+				</div>
+				
+				<div class="clearfix"></div> 
+			</footer>
+			
+			<div class="copyright-footer">
+               <p>
+               <a>Copyright &#169; 2021 Hello Coderz. All rights reserved.</a>
+               </p>
+            </div>
+		</main>
+		
+		<script>		
+		document.querySelector("iframe").addEventListener("load", 
+			function() 
+			{
+				
+				window.scrollTo
+				({
+					top: 0,
+					left: 0,
+					behavior: 'smooth'
+				});
+				
+				document.querySelector("iframe").style.height="500px";
+		});
+		</script>
+	</body>
+</html>
