@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Python Levels | Hello Coderz</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="scripts.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/logoNoWords.png">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body onscroll="scrollFunction()">
+		<nav>
+			<div class="left-side">
+				<a href="index" class="logo"><img src="images/whiteLogo.png" alt="logo"></a>
+			</div>
+			
+			<div class="right-side">
+				<!-- Right-sided navbar links -->
+				<div class="right hide-small">
+				
+					<div id = "myNav" class="nav-link-wrapper overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					
+						<div class="overlay-content">
+						
+							<hr>
+							
+							<div id = "dropdown1" class="dropdown">
+								<div tabindex=0 onclick="toggleDropdown()" class = "link">
+									<a>ABOUT</a>
+									<span class="carrot">&#8250;</span>
+								</div>
+								
+								<div class="dropdown-content">
+									<a class="dropdown-link" href="faq">FAQs</a>
+									<a class="dropdown-link" href="policies">Policies</a>
+									<a class="dropdown-link" href="founders">Founders</a>
+								</div>
+							</div>
+							
+							<hr>
+							
+							<a href="why" class="link">WHY</a>
+							
+							<hr>
+							
+							<a href="levels" class="link active-link">PYTHON LEVELS</a>
+							
+							<hr>
+							
+							<a href="tuition" class="link">TUITION</a>
+							
+							<hr>
+							
+							<div id = "dropdown2" class="dropdown">
+								<div tabindex=0 onclick="toggleDropdown()" class = "link">
+									<a>REGISTER</a>
+									<span class = "carrot">&#8250;</span>
+								</div>
+								
+								<div class="dropdown-content">
+									<a class="dropdown-link" href="trial">Free Trial</a>
+									<a class="dropdown-link" href="session">Sessions</a>
+								</div>
+							</div>
+							
+							<hr>
+							
+							<a href="contests" class="link">CONTESTS</a>
+							
+							<hr>
+							
+							<a href="jobs" class="link">JOBS</a>
+							
+							<hr>
+							
+							<a href="contact" class="link">CONTACT</a>
+							
+						</div>
+						
+					</div>
+					
+					<a href="javascript:void(0)" class="menu" onclick="openNav()">&#9776;</a>
+					
+				</div>
+			</div>
+		</nav>
+		
+		<main>
+			<div class="hero-image">
+				<div class="hero-text">
+					<h1>Python Levels</h1>
+				</div>
+			</div>
+		
+			<div class="main-wrapper">
+                
+				<img id="language-chart" src="images/language-chart.jpeg" alt="Python remains on top!">
+                
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                
+                <script>enlargeLanguageChart();</script>
+                
+				<div class="left-wrapper">
+					<h2>What is Python?</h2>
+					
+					<p>
+					Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Python's simple, 
+					easy to learn syntax emphasizes readability and reduces the cost of program maintenance. Python is well known for 
+					providing increased productivity. When programming in Python, there is no additional step of compiling the code, 
+					which in turn speeds up the edit-test-debug cycle.
+					</p>
+					
+					<h2>Why does Hello Coderz start with Python?</h2>
+					
+					<p>
+					At Hello Coderz, we believe that Python is one of the simplest languages to pick up. Python's simple syntax allows students 
+                    to focus on larger programming concepts. This <strong>allows students to develop their logic and analytic thinking skills</strong>, rather than 
+					concentrating too much on the technicalities of learning a difficult language. <strong>Python is also one of the most used languages in the 
+                    industry</strong>, so learning the language is highly beneficial to any student. After learning Python, a student can comfortably 
+					transition to any language, and have a strong foundational understanding of the concepts.
+					</p>
+					
+					
+				</div>
+				
+				<hr class="levels-hr">
+			
+				<div class="levels">
+					<div class="level">
+						<h4>Level 1</h4>
+					
+						<p>
+						Python Level 1 focuses on understanding the foundation of Python. Students will 
+						learn to <strong>print, add comments to their code, use operators, variables
+						and data types, inputs, conditionals, for loops, while loops, and how to write pseudo code.</strong>
+						</p>
+						
+						<p>
+						Python Level 1 is a great introduction to the basis of programming.
+						</p>
+				
+					</div>
+					
+					<div class="level">
+						<h4>Level 2</h4>
+						
+						<p>
+						Python Level 2 dives into a much deeper understanding of Python. Students will learn <strong>built-in 
+						/ premade functions, writing functions / lambda functions, scope, arrays / lists, sets, dictionaries,
+						searching, sorting, and time / space complexity.</strong>
+						</p>
+						
+						<p>
+						Python Level 2 gives students exposure to real life programming examples and will prepare them for
+						a lot of complex programs. 
+						</p>
+					</div>
+					
+					<div class="level">	
+						<h4>Level 3</h4>
+						
+						<p>
+						Python Level 3 assumes that students have a strong foundation in Level 1 and Level 2 concepts.
+						Students will learn <strong>recursion, string formatting, reading from a file, writing to a file, 
+						errors / exceptions, and trying and catching exceptions.</strong>
+						</p>
+						
+						<p>
+						By the end of Python Level 3, students should be able to apply their knowledge and solve most 
+						programming questions (from high school level competitions). 
+						</p>
+					</div>
+				</div>
+				
+				<div class="levels">
+					<div class="level">
+						<h4>Level 4 (Optional)</h4>
+						
+						<p>
+						Python Level 4 is the final level, and should only begin once the student is confident about all prior levels. Python is an object-oriented language, so without 
+						going into classes, objects, and more, a huge hole would be left in the student's programming 
+						knowledge. Students will learn <strong>classes and objects, methods, inheritance, polymorphism, 
+						and linked lists.</strong>
+						</p>
+						
+						<p>
+						Python Level 4 will prepare students for any programming challenge that they may have. By the end 
+						of the level, students should feel comfortable (and thrive) in any programming competition or school
+						class.
+						</p>
+					</div>
+						
+					<div class="level">
+						<h4>Graphics (Optional)</h4>
+						
+						<p>
+						Graphics is an optional level, offered to students enrolled in instructor lessons at Hello Coderz. Graphics is for students who would like to work on a more visually 
+						appealing aspect of computer science. The Graphics Level utilizes PyGame to continue a student's Python 
+						studies. Graphics may be taken if a student desires as long as the prerequisites of Python Level 1 and 
+						Python Level 2 (or the equivalent placement tests) are met.
+						</p>
+						
+						<p>
+						Graphics will focus on two projects / games that will be selected by the student. Their instructor will 
+						offer them options as to what they would like to make. This Graphics Level will reiterate past Python 
+						knowledge, as well as introduce the student to additional graphics and Python concepts.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<footer>
+				<div class="left-footer-wrapper">
+					<h3>Connect With Us</h3>
+				
+					<a href="https://www.facebook.com/Hello-Coderz-100532678429174" target="_blank"><i class="fa fa-facebook-official"></i></a>
+					<a href="https://www.instagram.com/hellocoderz" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UC-Uk219y5WWWXd9Q2IXkONw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+					<a href="https://www.linkedin.com/company/hello-coderz" target="_blank"><i class="fa fa-linkedin"></i></a>
+				</div>
+				
+				<div class="right-footer-wrapper">
+					<div class="right-footer-item">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:info@hellocoderz.com">info@hellocoderz.com</a>
+					</div>
+										
+					<div class="right-footer-item">
+						<i class="fa fa-phone"></i>
+						<a href="tel:(603) 943-1367">(603) 943-1367</a>
+					</div>
+				</div>
+				
+				<div style="clear: both;"></div> 
+				<div></div>
+			</footer>
+			
+			<div class="copyright-footer">
+               <p>
+               <a>Copyright &#169; 2021 Hello Coderz. All rights reserved.</a>
+               </p>
+            </div>
+		</main>
+	</body>
+</html>

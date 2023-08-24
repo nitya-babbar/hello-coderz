@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hello Coderz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="scripts.js"></script>
+        <link rel="icon" href="images/logoNoWords.png">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link href="libraries/fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body onscroll="scrollFunction()" onresize="quoteHeight()" onload="quoteHeight()">
+        <nav>
+            <div class="left-side">
+                <a href="index" class="logo"><img src="images/whiteLogo.png" alt="logo"></a>
+            </div>
+
+            <div class="right-side">
+                <!-- Right-sided navbar links -->
+                <div class="right hide-small">
+
+                    <div id = "myNav" class="nav-link-wrapper overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <div class="overlay-content">
+
+                            <hr>
+
+                            <div id = "dropdown1" class="dropdown">
+                                <div tabindex=0 onclick="toggleDropdown()" class = "link">
+                                    <a>ABOUT</a>
+                                    <span class="carrot">&#8250;</span>
+                                </div>
+
+                                <div class="dropdown-content">
+                                    <a class="dropdown-link" href="faq">FAQs</a>
+                                    <a class="dropdown-link" href="policies">Policies</a>
+                                    <a class="dropdown-link" href="founders">Founders</a>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <a href="why" class="link">WHY</a>
+
+                            <hr>
+
+                            <a href="levels" class="link">PYTHON LEVELS</a>
+
+                            <hr>
+
+                            <a href="tuition" class="link">TUITION</a>
+
+                            <hr>
+
+                            <div id = "dropdown2" class="dropdown">
+                                <div tabindex=0 onclick="toggleDropdown()" class = "link">
+                                    <a>REGISTER</a>
+                                    <span class = "carrot">&#8250;</span>
+                                </div>
+
+                                <div class="dropdown-content">
+                                    <a class="dropdown-link" href="trial">Free Trial</a>
+                                    <a class="dropdown-link" href="session">Sessions</a>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <a href="contests" class="link">CONTESTS</a>
+
+                            <hr>
+
+                            <a href="jobs" class="link">JOBS</a>
+
+                            <hr>
+
+                            <a href="contact" class="link">CONTACT</a>
+
+                        </div>
+
+                    </div>
+
+                    <a href="javascript:void(0)" class="menu" onclick="openNav()">&#9776;</a>
+
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="hero-image cover">
+                <div class="hero-text">
+                    <h1 class="motto">Anyone can code.</h1>
+                </div>
+            </div>
+
+            <div class="arrow-wrapper">
+                <a href="#arrow" class="arrow" id="arrow">&#8250;</a>
+            </div>
+
+            <div class="message-flag-wrapper">
+                <p>
+                    <a href="trial" class="link" id="flag">Sign up for a free online trial lesson!</a>
+                </p>
+            </div>
+
+            <div class="main-wrapper home">	               
+
+                <div class="left-wrapper">
+                    <h2>What is Hello Coderz?</h2>
+
+                    <p>                        
+                        Hello Coderz is a platform that encourages young students to learn the core of programming in a fun and engaging way. There are two main parts to Hello Coderz: lessons and contests.
+                    </p>
+
+                    <div class="index-table-wrapper">
+                        <table>
+                            <tr>
+                                <th>
+                                    <i class="fas fa-user"></i>
+                                    <br>
+                                    Lessons
+                                </th>
+                                <th>
+                                    <i class="fas fa-medal"></i>
+                                    <br>
+                                    Contests
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <p>
+                                        Hello Coderz lessons are minimally priced with qualified instructors. To keep them engaged, students learn at a pace that is personalized to them. Students  sign up for one session (consisting of 10 one-hour lessons) at a time. Lessons can be private, in groups of two, or in groups of three (prices vary). All classes are completed virtually through Zoom, and students receive about an hour of homework to complete by their next class. Currently, Hello Coderz teaches Python; Java and C++ curriculum are being constructed.
+                                    </p>
+                                </td>
+
+                                <td valign="top">
+                                    <p>
+                                        Hello Coderz offers <strong>free</strong> programming contests to middle and high school students from any location, worldwide. They take place on the first Saturday of each month. Teams of up to three students can participate. There is a different set of problems for each division: middle school and high school. A prize will be given to the first place team in each division. These contests are a great way for new programmers to test the waters! For more information, and to register for the contests, visit the <a href="contests">Contests</a> page.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="index-table-wrapper-small">
+                        <i class="fas fa-user"></i>
+                        <br>
+                        <b>Lessons</b>
+                        <p>
+                            Hello Coderz lessons are minimally priced with qualified instructors. To keep them engaged, students learn at a pace that is personalized to them. Students sign up for one session (consisting of 10 one-hour lessons) at a time. Lessons can be private, in groups of two, or in groups of three (prices vary). All classes are completed virtually through Zoom, and students receive about an hour of homework to complete by their next class. Currently, Hello Coderz teaches Python; Java and C++ curriculum are being constructed.
+                        </p>
+                        <br>
+                        <i class="fas fa-medal"></i>
+                        <br>
+                        <b>Contests</b>
+                        <p>
+                            Hello Coderz offers <strong>free</strong> programming contests to middle and high school students from any location, worldwide. They take place on the first Saturday of each month. Teams of up to three students can participate. There is a different set of problems for each division: middle school and high school. A prize will be given to the first place team in each division. These contests are a great way for new programmers to test the waters! For more information, and to register for the contests, visit the <a href="contests">Contests</a> page.
+                        </p>
+                    </div>
+
+                    <img id="code" src="images/code.jpg" alt="Python Code">
+
+                    <div class="philosophy">
+                        <h2>Philosophy</h2>
+
+                        <p>
+                            We believe that with the ability to code, students can dream bigger and achieve more. Our philosophy is to not only teach children how to code, but to show our students the joy in coding. Like a rising balloon, if students enjoy what they are doing, they can rise up to any challenge. Students learn best from those that are closer to their age, and through their high school / college instructors, they will not only learn to program but will also have a role model to look up to.
+                        </p>
+
+                        <p>
+                            Learning to code not only develops programming skills, but also logic and analytical thinking skills that can be used everywhere. We believe that all students deserve a chance to explore the benefits of coding regardless of financial backgrounds. This is why Hello Coderz programs are significantly lower in cost as compared to the rest of the market. Our goal is to introduce more students from all economic backgrounds to the tech world at a younger age, help them grow confidence in coding, and ultimately encourage them to pursue further education in a STEM field.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quotes">
+                <h3>WHY LEARN TO CODE?</h3>
+
+                <div class="quote-wrapper">	
+                    <a><i class="fa fa-angle-left" id="prev" onclick="plusQuote(-1)"></i></a>
+
+                    <div id="slider" class="slides-wrapper">
+                        <div class="quotes-wrapper">
+                            <span class="quote">
+                                <img src="images/steve-jobs.jpg" alt="Steve Jobs">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“Everybody in this country should learn to program a computer… because it teaches you how 
+                                                to think.”</em>
+                                        </p>
+
+                                        <img src="images/apple-logo.png" alt="Apple Logo">
+
+                                        <p class="author">
+                                            <strong>Steve Jobs</strong>
+                                            <br>
+                                            Co-founder of Apple
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/susan-wojcicki.jpg" alt="Susan Wojcicki">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>"Learning to code makes kids feel empowered, creative, and confident. If we 
+                                                want our young kids to retain these traits into adulthood, a great option is to 
+                                                expose them to computer programming in their youth."</em>
+                                        </p>
+
+                                        <img src="images/youtube-logo.png" alt="YouTube Logo">
+
+                                        <p class="author">
+                                            <strong>Susan Wojcicki</strong>
+                                            <br>
+                                            CEO of YouTube
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/mark-zuckerberg.jpg" alt="Mark Zuckerberg">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“In fifteen years we’ll be teaching programming just like reading and writing… and wondering 
+                                                why we didn’t do it sooner.”</em>
+                                        </p>
+
+                                        <img src="images/facebook-logo.png" alt="Facebook Logo">
+
+                                        <p class="author">
+                                            <strong>Mark Zuckerberg</strong>
+                                            <br>
+                                            Co-Founder and CEO of Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/bill-gates.jpg" alt="Bill Gates">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“Learning to write programs stretches your mind, and helps you think better, creates a way of 
+                                                thinking about things that I think is helpful in all domains.”</em>
+                                        </p>
+
+                                        <img src="images/microsoft-logo.png" alt="Microsoft Logo">
+
+                                        <p class="author">
+                                            <strong>Bill Gates</strong>
+                                            <br>
+                                            Co-Founder of Microsoft
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/tim-cook.jpg" alt="Tim Cook">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“If I were a French student and I was 10 years old, I think it would be more important for me 
+                                                to learn coding than English. This is a language that you can express yourself to 7 billion people 
+                                                in the world.”</em>
+                                        </p>
+
+                                        <img src="images/apple-logo.png" alt="Apple Logo">
+
+                                        <p class="author">
+                                            <strong>Tim Cook</strong>
+                                            <br>
+                                            CEO of Apple
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/sheryl-sandberg.jpg" alt="Sheryl Sandberg">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“An understanding of computer science is becoming increasingly essential in today’s world. Our 
+                                                national competitiveness depends upon our ability to educate our children in this critical field.”</em>
+                                        </p>
+
+                                        <img src="images/facebook-logo.png" alt="Facebook Logo">
+
+                                        <p class="author">
+                                            <strong>Sheryl Sandberg</strong>
+                                            <br>
+                                            COO of Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/sundar-pichai.jpg" alt="Sundar Pichai">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“We want every kid in the world to be excited about the many possibilities coding can unlock - 
+                                                for themselves, for their communities, and for society. Everyone should have the opportunity to 
+                                                learn computer science at school and beyond.”</em>
+                                        </p>
+
+                                        <img src="images/google-logo.png" alt="Google Logo">
+
+                                        <p class="author">
+                                            <strong>Sundar Pichai</strong>
+                                            <br>
+                                            CEO of Google
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/stephen-hawking.jpg" alt="Stephen Hawking">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“Whether you want to uncover the secrets of the universe, or you just want to pursue a career 
+                                                in the 21st century, basic computer programming is an essential skill to learn.”</em>
+                                        </p>
+
+                                        <p class="author">
+                                            <strong>Stephen Hawking</strong>
+                                            <br>
+                                            Theoretical Physicist
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/mark-zuckerberg.jpg" alt="Mark Zuckerberg">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“My number one piece of advice is: You should learn how to program.”</em>
+                                        </p>
+
+                                        <img src="images/facebook-logo.png" alt="Facebook Logo">
+
+                                        <p class="author">
+                                            <strong>Mark Zuckerberg</strong>
+                                            <br>
+                                            Co-Founder and CEO of Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/satya-nadella.jpg" alt="Satya Nadella">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“This is a software-powered world.”</em>
+                                        </p>
+
+                                        <img src="images/microsoft-logo.png" alt="Microsoft Logo">
+
+                                        <p class="author">
+                                            <strong>Satya Nadella</strong>
+                                            <br>
+                                            CEO of Microsoft
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/marissa-mayer.jpg" alt="Marissa Mayer">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“I love technology, and I don’t think it’s something that should divide along gender lines.”</em>
+                                        </p>
+
+                                        <img src="images/yahoo-logo.png" alt="Yahoo! Logo">
+
+                                        <p class="author">
+                                            <strong>Marissa Mayer</strong>
+                                            <br>
+                                            Former CEO and President of Yahoo!
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/jack-dorsey.jpg" alt="Jack Dorsey">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“Code teaches you how to face really big problems.”</em>
+                                        </p>
+
+                                        <img src="images/twitter-logo.png" alt="Twitter Logo">
+
+                                        <p class="author">
+                                            <strong>Jack Dorsey</strong>
+                                            <br>
+                                            Co-Founder and CEO of Twitter and Square
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/bill-gates.jpg" alt="Bill Gates">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>“I think it’s fair to say that personal computers have become the most 
+                                                empowering tool we’ve ever created. They’re tools of communication, they’re 
+                                                tools of creativity, and they can be shaped by their user.”</em>
+                                        </p>
+
+                                        <img src="images/microsoft-logo.png" alt="Microsoft Logo">
+
+                                        <p class="author">
+                                            <strong>Bill Gates</strong>
+                                            <br>
+                                            Co-Founder of Microsoft
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+
+                            <span class="quote">
+                                <img src="images/sheryl-sandberg.jpg" alt="Sheryl Sandberg">
+
+                                <div class="words-wrapper">
+                                    <div class="words-inner-wrapper">
+                                        <p>
+                                            <em>"Girls and boys need the opportunity to learn computer science. By building technology, you make 
+                                                our world smaller, and our future brighter."</em>
+                                        </p>
+
+                                        <img src="images/facebook-logo.png" alt="Facebook Logo">
+
+                                        <p class="author">
+                                            <strong>Sheryl Sandberg</strong>
+                                            <br>
+                                            COO of Facebook
+                                        </p>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+
+                    <a><i class="fa fa-angle-right" id="next" onclick="plusQuote(1)"></i></a>
+                </div>
+            </div>
+
+            <footer class="home-footer">
+                <div class="left-footer-wrapper">
+                    <h3>Connect With Us</h3>
+
+                    <a href="https://www.facebook.com/Hello-Coderz-100532678429174" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                    <a href="https://www.instagram.com/hellocoderz" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC-Uk219y5WWWXd9Q2IXkONw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    <a href="https://www.linkedin.com/company/hello-coderz" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+                <div class="right-footer-wrapper">
+                    <div class="right-footer-item">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@hellocoderz.com">info@hellocoderz.com</a>
+                    </div>
+
+                    <div class="right-footer-item">
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:(603) 943-1367">(603) 943-1367</a>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div> 
+            </footer>
+
+            <div class="copyright-footer">
+                <p>
+                    <a>Copyright &#169; 2021 Hello Coderz. All rights reserved.</a>
+                </p>
+            </div>
+        </main>
+
+        <script src="libraries/HackTimer.min.js" type="text/javascript"></script>
+        <script src="libraries/hammer.min.js" type="text/javascript"></script>
+
+        <script>
+            var currentSlide = 1;
+            showQuote(currentSlide);
+
+            var quoteEnabled = true;
+            var myElement = document.getElementsByClassName("quotes-wrapper")[0];
+
+            var hammertime = new Hammer(myElement);
+
+            hammertime.on("swipeleft", function(ev) 
+                          {
+                if (quoteEnabled)
+                {
+                    plusQuote(1);
+                }
+            });
+
+            hammertime.on("swiperight", function(ev) 
+                          {
+                if (quoteEnabled)
+                {
+                    plusQuote(-1);
+                }
+            });
+
+            document.body.addEventListener('keyup', function(event) 
+                                           { 
+                if (quoteEnabled)
+                {
+                    const key = event.key; 
+                    switch (key) 
+                    { 
+                        case "ArrowLeft": 
+                            plusQuote(-1);
+                            break;
+                        case "ArrowRight": 
+                            plusQuote(1);
+                            break;
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
